@@ -227,7 +227,7 @@
 +	else
 +		strcpy(name, "eoip%d");
 +
-+	dev = alloc_netdev(sizeof(*t), name, eoip_setup);
++	dev = alloc_netdev(sizeof(*t), name, NET_NAME_UNKNOWN, eoip_setup);
 +	if (!dev)
 +		return NULL;
 +
