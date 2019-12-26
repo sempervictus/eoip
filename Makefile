@@ -1,5 +1,8 @@
 STRIP=strip
 
+install: eoip
+	cp eoip /usr/bin
+
 all: eoip
 
 eoip: eoipcr.c libnetlink.o
